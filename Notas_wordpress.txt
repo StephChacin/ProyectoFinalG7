@@ -1,0 +1,9 @@
+Base de datos: saikyoujapones_wp
+usuario:root
+contraseña:root
+prefijo: sj_
+
+Wordpress
+Título: Saikyou Japonés
+Usuario: stephchacin
+contraseña: Inoshikachou*72
