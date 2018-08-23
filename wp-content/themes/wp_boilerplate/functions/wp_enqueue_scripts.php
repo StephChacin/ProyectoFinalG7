@@ -24,9 +24,13 @@ function dl_enqueue_scripts() {
 
 	/* Register Scripts */
 	wp_register_script( 'flickity', get_theme_file_uri('/assets/js/lib/flickity.pkgd.js'), array('jquery-migrate'), '2.1.0', true );
+	wp_register_script( 'google_maps', 
+		'https://maps.googleapis.com/maps/api/js?key=AIzaSyCZtP9MFlLZB-zhCsVI_uuvb5bytOk1lyE&callback=initMap', null, null, true );
 	wp_register_script( 'flexslider', get_theme_file_uri('/assets/js/lib/jquery.flexslider.js'), array('jquery-migrate'), null, true );
 	wp_register_script( 'main_js', get_theme_file_uri('/assets/js/functions.js'), array('jquery-migrate'), $theme_data->get( 'Version' ), true );
+	
 	wp_register_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), $theme_data->get( '3.3.7' ), true );
+
 	wp_register_script( 'my_script', get_theme_file_uri('/assets/js/script.js'), array('jquery-migrate'), $theme_data->get( 'Version' ), true );
 
 
@@ -47,6 +51,7 @@ function dl_enqueue_scripts() {
 		wp_enqueue_script( 'flickity' );
 	}
 
+	wp_enqueue_script( 'google_maps' );
 	wp_enqueue_script( 'main_js' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap_js' );

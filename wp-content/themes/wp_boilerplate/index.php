@@ -112,16 +112,15 @@
 							<button id="send" name="send" class="btn btn-block col-md-6">Enviar</button>
 						</form>
 					</section>
-					<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.8868108309307!2d-70.57486158189842!3d-33.4522553563135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ce4af42b0dbb%3A0x676033cd940a530!2zUGxhemEgRWdhw7FhLCDDkXXDsW9hLCBSZWdpw7NuIE1ldHJvcG9saXRhbmE!5e0!3m2!1ses!2scl!4v1533325071138" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
+		<!--API MAP-->
+	    <h3 class="contact_form">Nuestra ubicación</h3>
+	    <div id="map"></div>
 
-			<div id="content"></div>
-			<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+		</div>
+	</div>
 
-			<div id="map"></div>
+
+	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 <?php get_sidebar() ?>
 

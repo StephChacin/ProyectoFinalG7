@@ -5,11 +5,6 @@ font-family: 'Rubik Mono One', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Karla', sans-serif;
 */
-/*CAMBIAR ESTO!!* LLEVAR AL HEAD D: */
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-
-/*Ej: para alguna sección: background-image: url("../images/sakura.png");*/
 
 body {
 	margin: 0px;
@@ -82,14 +77,6 @@ body {
 	}
 }
 
-/*@media (min-width: 768px) {
-	.navbar-collapse .collapse { 
-    	display: block;
-    	height: auto;
-    	padding-bottom: 0;
-    	overflow: visible;
-	} ???
-}*/
 
 .top_phrase {
 	margin-top: 8.5em;
@@ -594,11 +581,11 @@ section .sidebar_left {
 
 #back-to-top {
     position: fixed;
-    bottom: 40px;
+    bottom: 8px;
     right: 40px;
     z-index: 9999;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     line-height: 30px;
     background: #f5f5f5;
@@ -622,3 +609,96 @@ section .sidebar_left {
 #content {
     height: 50px;
 }
+
+/*Map Styles*/
+#map {
+  height: 100%;
+}
+
+.icon > i {
+  font-family: 'weathericons';
+  font-size: 15rem;
+  font-style: normal;
+}
+
+/*Map style*/
+#map {
+	height: 360px;  /* The height is 400 pixels */
+    width: 50%;  /* The width is the width of the web page */
+    }
+
+
+/*Store styles*/
+
+.products {
+	text-align: center;
+	padding: 0;
+	padding-top: 10em;
+}
+
+.products__books {
+	display: inline-block;
+	padding: 10px 10px 30px 10px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	margin: 1em;
+
+}
+
+.products__thumbnail {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 400px;
+}
+
+.products__img {
+	width: 100%;
+}
+
+.social {
+	background-color: white;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 1em;
+}
+
+.social__element {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.social__btn {
+	border: none;
+	background: none;
+	font-size: 1.2em;
+	color: grey;
+}
+
+.social__btn_cart {
+	border: none;
+	background: none;
+	font-size: 1.2em;
+	color: grey;
+}
+
+.social__btn:hover {
+	color: red;
+}
+
+.social__btn_cart:hover {
+	color: black;
+}
+
+.social__like--clicked {
+	color: red;
+	text-shadow: 0 1px 7px rgba(255,255,0,1);
+}
+
+.social__like--clicked:hover {
+	color: tomato;
+}
+
+ 

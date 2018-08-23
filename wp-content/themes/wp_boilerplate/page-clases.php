@@ -8,10 +8,10 @@
 	<section class="banner_section1">
 		<!--Aquí va un carrousel-->
 		<div class="main-carousel">
-			<div class="carousel-cell responsive"><img src="./assets/images/jlptlogo.jpg" alt=""></div>
-			<div class="carousel-cell responsive"><img src="./assets/images/Japan.jpg" alt=""></div>
-			<div class="carousel-cell responsive"><img src="./assets/images/fan.jpg" alt=""></div>
-			<div class="carousel-cell responsive"><img src="./assets/images/totoro.jpg" alt=""></div>
+			<div class="carousel-cell responsive"><img src="<?php bloginfo('template_url')?>/assets/images/jlptlogo.jpg" alt=""></div>
+			<div class="carousel-cell responsive"><img src="<?php bloginfo('template_url')?>/assets/images/Japan.jpg" alt=""></div>
+			<div class="carousel-cell responsive"><img src="<?php bloginfo('template_url')?>/assets/images/fan.jpg" alt=""></div>
+			<div class="carousel-cell responsive"><img src="<?php bloginfo('template_url')?>/assets/images/totoro.jpg" alt=""></div>
 		</div>
 	</section>
 
@@ -56,7 +56,7 @@
 		<p class="classes_objective_main">Queremos brindar mayor acceso al estudio de la lengua japonesa, facilitando herramientas e impartiendo talleres de iniciación al idioma y otras actividades culturales.</p>
 
 		<ul  class="classes_objectives col-md-6">
-				<p>Entre nuestros	objetivos está que nuestros estudiantes logren:</p>
+			<p>Entre nuestros	objetivos está que nuestros estudiantes logren:</p>
 				<li>Conocer los principios fundamentales de la lengua Japonesa</li>
 				<li>Familiarizarse con la cultura al mismo tiempo que aprenden a comprender y utilizar el lenguaje Japonés básico.</li>
 				<li>Adquirir vocabulario y elementos gramaticales básicos necesarios para manejar la

@@ -35,7 +35,7 @@
 					<li><a href="<?php bloginfo('url') ?>/conocenos">CONÓCENOS</a></li>
 					<li><a href="<?php bloginfo('url') ?>/clases">CLASES</a></li>
 					<li><a href="<?php bloginfo('url') ?>/tienda">TIENDA</a></li>
-					<li><a href="#contact">CONTACTO</a></li>
+					<li><a href="<?php bloginfo('url') ?>/index.php#contact">CONTACTO</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
