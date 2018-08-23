@@ -25,7 +25,7 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a class="navbar-nav navbar-brand" href="index.html"><img class="navbar_logo" src="./assets/images/LOGO_SAIKYOU3.png" alt="Logo Clases de Japonés"></a>
+				<a class="navbar-nav navbar-brand" href="index.html"><img class="navbar_logo" src="<?php bloginfo('template_url')?>/assets/images/LOGO_SAIKYOU3.png" alt="Logo Clases de Japonés"></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

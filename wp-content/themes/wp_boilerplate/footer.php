@@ -7,7 +7,7 @@
 	<div class="footer">
 		<div class="row">		
 			<div class="col-md-3 col-md-offset-0 col-xs-8 col-xs-offset-2">
-				<a href="index.html"><img class="logo_foot" src="./assets/images/LOGO_SAIKYOU_BLACK.png" alt="Logo Clases de Japonés"></a>
+				<a href="index.html"><img class="logo_foot" src="<?php bloginfo('template_url')?>/assets/images/LOGO_SAIKYOU_BLACK.png" alt="Logo Clases de Japonés"></a>
 				<p class="footer_phrase">Saikyou. Clases de idioma japonés, talleres y artículos relacionados a la cultura japonesa.</p>
 			</div>
 
