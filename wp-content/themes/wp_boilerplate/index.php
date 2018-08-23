@@ -118,6 +118,11 @@
 				</div>
 			</div>
 
+			<div id="content"></div>
+			<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
+			<div id="map"></div>
+
 <?php get_sidebar() ?>
 
 <?php get_footer() ?>

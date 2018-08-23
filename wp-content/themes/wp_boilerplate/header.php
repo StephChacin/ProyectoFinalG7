@@ -7,6 +7,7 @@
 	<?php get_template_part('_includes/iOS', 'icons') ?>
 	<?php wp_head() ?>
 </head>
+
 <body>
 
 <?php if ( has_nav_menu( 'header-menu' ) ) { ?>
@@ -25,15 +26,15 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<a class="navbar-nav navbar-brand" href="index.html"><img class="navbar_logo" src="<?php bloginfo('template_url')?>/assets/images/LOGO_SAIKYOU3.png" alt="Logo Clases de Japonés"></a>
+				<a class="navbar-nav navbar-brand" href="index.php"><img class="navbar_logo" src="<?php bloginfo('template_url')?>/assets/images/LOGO_SAIKYOU3.png" alt="Logo Clases de Japonés"></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="conocenos.html">CONÓCENOS</a></li>
-					<li><a href="clases.html">CLASES</a></li>
-					<li><a href="tienda.html">TIENDA</a></li>
+					<li><a href="<?php bloginfo('url') ?>/index.php">HOME</a></li>
+					<li><a href="<?php bloginfo('url') ?>/conocenos">CONÓCENOS</a></li>
+					<li><a href="<?php bloginfo('url') ?>/clases">CLASES</a></li>
+					<li><a href="<?php bloginfo('url') ?>/tienda">TIENDA</a></li>
 					<li><a href="#contact">CONTACTO</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->

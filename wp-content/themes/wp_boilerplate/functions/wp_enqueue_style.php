@@ -22,8 +22,13 @@ function dl_enqueue_style() {
 	wp_register_style( 'flexslider', get_theme_file_uri( '/assets/css/flexslider.css'), null, '2.7.1', 'screen' );
 	wp_register_style( 'flickity', get_theme_file_uri( '/assets/css/flickity.css'), null, '2.1.0', 'screen' );
 	wp_register_style( 'main_style', get_theme_file_uri( '/assets/css/style.css'), array('reset'), $theme_data->get( 'Version' ), 'screen' );
-	
 	wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css', null, '5.2.0', 'screen' );
+	wp_register_style( 'Archivo', 'https://fonts.googleapis.com/css?family=Archivo:400,600,700', null, '1.0', 'screen' );
+	wp_register_style( 'Rubik', 'https://fonts.googleapis.com/css?family=Rubik+Mono+One', null, '1.0', 'screen' );
+	wp_register_style( 'Roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900', null, '1.0', 'screen' );
+	wp_register_style( 'Karla', 'https://fonts.googleapis.com/css?family=Karla:400,700', null, '1.0', 'screen' );
+	wp_register_style( 'Noto', 'http://fonts.googleapis.com/earlyaccess/notosansjapanese.css', null, '1.0', 'screen' );
+
 	wp_register_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', null, $theme_data->get( '3.3.7' ), 'screen' );
 	wp_register_style( 'my_style', get_theme_file_uri( '/assets/css/my_style.css'), null, $theme_data->get( 'Version' ), 'screen' );
 
@@ -36,6 +41,10 @@ function dl_enqueue_style() {
 		wp_enqueue_style( 'flickity' );
 	}
 
+	wp_enqueue_style( 'Archivo' );
+	wp_enqueue_style( 'Roboto' );
+	wp_enqueue_style( 'Karla' );
+	wp_enqueue_style( 'Noto' );
 	wp_enqueue_style( 'main_style' );
 	wp_enqueue_style( 'bootstrap' );
 	wp_enqueue_style( 'fontawesome' );
