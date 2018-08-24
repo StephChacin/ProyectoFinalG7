@@ -18,40 +18,40 @@
 
 	<div class="container">
 		<ul class="row categories">
-			<li class="category__info col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+			<li class="category__info col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0">
 				<img class="category__icon" src="<?php bloginfo('template_url')?>/assets/images/japan.png" alt="Categoría">
 				<div class="category__text">
 					<p>Estas clases son ideales para ti si quieres estudiar japonés a tu ritmo.</p>
 				</div>
 			</li>
 
-			<li class="category__info col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+			<li class="category__info col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0">
 				<img class="category__icon" src="<?php bloginfo('template_url')?>/assets/images/lotus.png" alt="">
 				<div class="category__text">
 					<p>Material de estudio que puedes descargar. Juegos y canciones para aprender de forma liertida</p>
 				</div>
 			</li>
-			<li class="category__info col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">	
+			<li class="category__info col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0">	
 				<img class="category__icon" src="<?php bloginfo('template_url')?>/assets/images/origami.png" alt="">
 				<div class="category__text">
 					<p>Libros originales. Y artículos importados desde Japón.</p>	
 				</div>
 			</li>		
-			<li class="category__info col-xs-10 col-xs-offset-1 col-md-4 col-lg-4 col-md-offset-0">
+			<li class="category__info col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-lg-4 col-md-offset-0">
 				<img class="category__icon" src="<?php bloginfo('template_url')?>/assets/images/uchiwa.png" alt="">
 				<div class="category__text">
 					<p>Desarrollaremos las clases alrededor de un libro principal. Trabajando todos los aspectos del idioma.</p	
 					</div>
 				</li>
 
-				<li class="category__info col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">
+				<li class="category__info col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0">
 					<img class="category__icon" src="<?php bloginfo('template_url')?>/assets/images/koinobori.png" alt="">
 					<div class="category__text">
 						<p>Gramática, vocabulario, conversación, comprensión auditiva, escritura: hiragana, katakana, kanji.</p>
 					</div>
 				</li>
 
-				<li class="category__info col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0">	
+				<li class="category__info col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-4 col-md-offset-0">	
 					<img class="category__icon" src="<?php bloginfo('template_url')?>/assets/images/bamboo.png" alt="">
 					<div class="category__text">
 						<p>Examen de proficiencia del Japonés: JLPT</p>
@@ -66,7 +66,7 @@
 		</div>
 
 		<div class="container middle_section">
-			<div class="imagen_conocenos col-md-5">
+			<div class="imagen_conocenos col-xs-6 col-md-5">
 				<img src="<?php bloginfo('template_url')?>/assets/images/Steph.jpg" alt="Conocemos">
 			</div>
 			

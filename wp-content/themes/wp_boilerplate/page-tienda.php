@@ -1,9 +1,25 @@
 <?php get_header() ?>
 	<?php the_post() ?>
 	
-	<?php the_post_thumbnail() ?>
-	<?php the_title() ?>
-	<?php the_content(); ?>
+	<?php 
+		$arg =array (
+			'post_type' =>'tienda_post_type',
+			'post_per_page' =>6,
+			'paged' =>$paged
+		);
+
+	$get_arg = new WP_Query($arg);
+	while ($get_arg->have_post() ){
+		$get_arg->the_post();
+	?>
+	
+		<?php the_post_thumbnail() ?>
+		<?php the_title() ?>
+		<?php the_content(); ?>
+	<?php } wp_reset_postdata();
+	?>
+	<?php the_pagination($get_arg); ?>
+	<?php the_permalink() ?> 
 
 	<ul class="products">
 		<li class="products__books">

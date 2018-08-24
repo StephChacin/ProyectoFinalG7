@@ -11,7 +11,7 @@
 				<p class="footer_phrase">Saikyou. Clases de idioma japonés, talleres y artículos relacionados a la cultura japonesa.</p>
 			</div>
 
-			<div class="social_networks col-md-2 col-xs-6 col-md-offset-6 col-xs-offset-3">
+			<div class="social_networks col-md-2 col-xs-7 col-md-offset-6 col-xs-offset-3">
 				<div class="social_icon">
 					<a href="https://www.linkedin.com/in/stephaniechacin/"><i class="fab fa-linkedin"></i></a>
 				</div>

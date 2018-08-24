@@ -7,6 +7,13 @@ $('.main-carousel').flickity({
   autoPlay: true,
 });
 
+ $("#getting-started")
+  .countdown("2017/01/01", function(event) {
+    $(this).text(
+      event.strftime('30D days 3H:10M:10S')
+    );
+  });
+
 
 //Mapa Google
 var API_key = 'AIzaSyCZtP9MFlLZB-zhCsVI_uuvb5bytOk1lyE';

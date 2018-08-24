@@ -355,11 +355,11 @@ button#send:hover{
 
 @media (max-width: 800px) {
 	.footer {
-		height: 320px;
+		height: 330px;
 	}
 
 	.logo_foot{
-		margin-left: 5em;
+		margin-left: 4em;
 	}
 
 	.social_networks {

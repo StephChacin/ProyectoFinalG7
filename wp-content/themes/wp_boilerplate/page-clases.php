@@ -92,6 +92,8 @@
 			<p class="col-md-2 clases_info_3">Hanafuda</p>
 			<p class="col-md-4 clases_info_3">Japonés a través del Manga</p>
 			<p class="col-md-3 clases_info_3"><strong>日本語能力試験</strong></p>
+			<div id="getting-started"></div>
+
 		</section>
 
 <?php get_footer() ?>
