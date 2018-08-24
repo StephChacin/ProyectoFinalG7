@@ -89,6 +89,12 @@
 		</li>
 	</ul>
 
+	 <div class="container">
+   		<button class="btn_phrase" id="get-another-quote-button"><strong>Nueva Frase</strong></button>
+   		<h2 id="#quote-title"></h2>
+   		<p id='quote-content'></p>
+	</div>
+
 	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 <?php get_footer() ?>

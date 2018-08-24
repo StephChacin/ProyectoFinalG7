@@ -1,4 +1,25 @@
-//alert("cargando");
+function getUrlVars() {
+	let url = window.location.pathname.split('/')
+	url.shift()
+	return url
+}
+
+function isPage(arr) {
+	const urlVars = getUrlVars()
+
+	if ( Array.isArray(arr) ) {
+		for( var i in arr ) {
+			if( urlVars.indexOf(arr[i]) > -1 ) {
+				return true
+			}
+		}
+		return false
+
+	} else {
+		console.log(`la variable arr debe ser un array: ${arr}`)
+	}
+}
+
 
 $('.main-carousel').flickity({
   // options
@@ -7,11 +28,36 @@ $('.main-carousel').flickity({
   autoPlay: true,
 });
 
- $("#getting-started")
-  .countdown("2017/01/01", function(event) {
-    $(this).text(
-      event.strftime('30D days 3H:10M:10S')
-    );
+if (isPage(['clases.html'])) {
+	$("#getting-started").countdown("2018/12/31", function(event) {
+		$(this).text(
+			event.strftime('%D days %H:%M:%S')
+		);
+	});
+}
+
+/*No funciona*/
+$('#get-another-quote-button').on('click', function(e) {
+    e.preventDefault();
+
+    $.ajax( {
+      url: "https://cors-anywhere.herokuapp.com/https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
+      success: function(data) {
+      	console.log(data)
+        var post = data.shift(); // The data is an array of posts. Grab the first one.
+        $('#quote-title').text(post.title);
+        $('#quote-content').html(post.content);
+      	console.log(post)
+
+        // If the Source is available, use it. Otherwise hide it.
+        if (typeof post.custom_meta !== 'undefined' && typeof post.custom_meta.Source !== 'undefined') {
+          $('#quote-source').html('Source:' + post.custom_meta.Source);
+        } else {
+          $('#quote-source').text('');
+        }
+      },
+      cache: false
+    });
   });
 
 
