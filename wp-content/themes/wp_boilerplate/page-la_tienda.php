@@ -1,27 +1,35 @@
 <?php get_header() ?>
 	<?php the_post() ?>
 	
+	<ul class="products">
 	<?php 
-		$arg =array (
-			'post_type' =>'tienda_post_type',
-			'post_per_page' =>6,
-			'paged' =>$paged
+		$arg = array(
+			'post_type' 	=> 'post',
+			'post_per_page' => 6,
+			'paged'			=> $paged
 		);
 
 	$get_arg = new WP_Query($arg);
+
 	while ($get_arg->have_post() ){
 		$get_arg->the_post();
 	?>
-	
-		<?php the_post_thumbnail() ?>
-		<?php the_title() ?>
-		<?php the_content(); ?>
-	<?php } wp_reset_postdata();
-	?>
-	<?php the_pagination($get_arg); ?>
-	<?php the_permalink() ?> 
 
-	<ul class="products">
+		<li class="products__books">
+			<a href="<?php the_permalink() ?>" class="products__thumbnail">
+				<?php the_post_thumbnail() ?>
+				<ul class="social">
+					<div class="caption"><h4><?php the_title() ?></h4></div>
+					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
+					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
+				</ul>
+			</a>
+		</li>
+	<?php } wp_reset_postdata(); ?>
+	</ul>
+	<?php the_pagination($get_arg); ?> 
+
+	<!-- <ul class="products">
 		<li class="products__books">
 			<div class="products__thumbnail">
 				<img src="<?php bloginfo('template_url')?>/assets/images/MarugotoA1K.jpg" alt="Producto 1" class="products__img">
@@ -87,7 +95,9 @@
 				</ul>
 			</div>
 		</li>
-	</ul>
+	</ul> -->
+
+	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 	 <div class="container">
    		<button class="btn_phrase" id="get-another-quote-button"><strong>Nueva Frase</strong></button>

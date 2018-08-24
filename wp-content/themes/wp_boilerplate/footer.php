@@ -2,7 +2,6 @@
 	<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'header_menu' ) ); ?>
 <?php } ?>
 
-<?php wp_footer() ?>
 	<!--Page Footer-->
 	<div class="footer">
 		<div class="row">		
@@ -35,5 +34,7 @@
 		</div>
 	</div>
 
+<?php get_template_part('_includes/footer', 'maps') ?>
+<?php wp_footer() ?>
 </body>
 </html>

@@ -95,7 +95,8 @@
 
 			<div class="countdown_title"><p>Examen de suficiencia de Idioma Japonés</p></div>
 			<div class="countdown" id="getting-started"></div>
-
+			
+			<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 		</section>
 

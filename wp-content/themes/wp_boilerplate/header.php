@@ -9,10 +9,6 @@
 </head>
 
 <body>
-
-<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header_menu' ) ); ?>
-<?php } ?>
 	
 	<!--Navbar-->
 	<nav class="navbar navbar-default">
@@ -31,11 +27,19 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php bloginfo('url') ?>/index.php">HOME</a></li>
+<!-- 					<li><a href="<?php bloginfo('url') ?>/index.php">HOME</a></li>
 					<li><a href="<?php bloginfo('url') ?>/conocenos">CONÓCENOS</a></li>
 					<li><a href="<?php bloginfo('url') ?>/clases">CLASES</a></li>
-					<li><a href="<?php bloginfo('url') ?>/tienda">TIENDA</a></li>
+					<li><a href="<?php bloginfo('url') ?>/la_tienda">TIENDA</a></li>
 					<li><a href="<?php bloginfo('url') ?>/index.php#contact">CONTACTO</a></li>
+ -->
+					<?php if ( has_nav_menu( 'header-menu' ) ) { ?>
+						<?php wp_nav_menu( array(
+							'theme_location' => 'header-menu',
+							'container' => false,
+							'menu_class' => 'nav navbar-nav navbar-right'
+						) ); ?>
+					<?php } ?>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
