@@ -30,7 +30,7 @@ function dl_enqueue_style() {
 	wp_register_style( 'Noto', 'http://fonts.googleapis.com/earlyaccess/notosansjapanese.css', null, '1.0', 'screen' );
 
 	wp_register_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', null, $theme_data->get( '3.3.7' ), 'screen' );
-	wp_register_style( 'my_style', get_theme_file_uri( '/assets/css/my_style.css'), null, $theme_data->get( 'Version' ), 'screen' );
+	wp_register_style( 'my_style', get_theme_file_uri( '/assets/css/my_style.css'), null, null, 'screen' );
 
 	/* Enqueue Scripts */
 	if ( $theme_options['slider']['flexslider'] ) {

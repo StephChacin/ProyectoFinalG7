@@ -74,7 +74,7 @@
 				<h2>Conócenos</h2>
 				<p>¡Hola! Mi nombre es Stephanie Chacin. Me dedico a la enseñanza del <b>Idioma Japonés</b> como lengua extranjera desde hace cinco años. Mi experiencia, además, se centra en la creación de material didáctico, dinámicas orientadas al aprendizaje y gestión académica. Con certificación de proficiencia del japonés <b>nivel N3</b>. Y experiencia profesional como profesora y coordinadora general del primer instituto de japonés en Maracaibo Venezuela, GOEN Maracaibo. Actual profesora del Instituto Cultural Chileno-Japonés y la Pontificia Universidad Católica de Chile.
 
-					Si quieres saber un poco más, haz click <a href="conocenos.html">aquí.</a></p>
+				Si quieres saber un poco más, haz click <a href="<?php bloginfo('url') ?>/conocenos">aquí.</a></p>
 				</div>
 			</div>
 

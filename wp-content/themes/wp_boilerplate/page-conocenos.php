@@ -35,6 +35,16 @@
 
 		<p class="about_info col-md-12">Capacitaciones en el Sistema Marugoto de enseñanza del japonés, por parte de la representante de la Fundación Japón en Brasil. Profesora Chisato Yoshioka.</p>
 
+		<h3 class="blog_title"><a href="<?php bloginfo('url') ?>/blog/">JLPT</a></h3>
+		<img class="about_image" src="<?php bloginfo('template_url')?>/assets/images/jlptlogo.jpg" alt="">
+
+		<p class="about_info col-md-12">El Examen Oficial de Nivel de Lengua Japonesa se realiza a nivel mundial para evaluar y certificar la competencia en la lengua japonesa. Popularmente conocido como Nôken (JLPT en sus siglas en inglés) ha sido organizado por la Fundación Japón y la Japan Educational Exchanges and Services desde 1984 como un medio fiable para evaluar y certificar la competencia en japonés de los hablantes no nativos.</p>
+
+		<h3 class="blog_title"><a href="<?php bloginfo('url') ?>/blog/">Minna vs Marugoto</a></h3>
+		<img class="about_image" src="<?php bloginfo('template_url')?>/assets/images/Minna1.jpg" alt="">
+
+		<p class="about_info col-md-12">Métodos de aprendizaje del Japonés. Minna no Nihongo vs Marugoto: ¿Cual es el ideal para ti?</p>
+
 	</section>
 
 <?php get_footer() ?>
