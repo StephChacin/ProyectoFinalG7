@@ -724,3 +724,11 @@ section .sidebar_left {
 	color:black;
 	margin-left: 50px;
 }
+
+.products__single{
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin-bottom: 1em;
+}
