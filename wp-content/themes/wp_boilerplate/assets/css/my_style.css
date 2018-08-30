@@ -441,6 +441,7 @@ section .sidebar_left {
 
 .blog_title {
 	padding-left: 50px;
+	text-decoration: none;
 }
 
 @media (max-width: 600px){

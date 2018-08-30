@@ -30,10 +30,11 @@
 	</section>
 
 	<section class="sidebar_right">
-		<h3 class="blog_title">BLOG</h3>
+		<h3 class="blog_title"><a href="<?php bloginfo('url') ?>/blog/">BLOG</a></h3>
 		<img class="about_image" src="<?php bloginfo('template_url')?>/assets/images/swy24.jpg" alt="">
 
 		<p class="about_info col-md-12">Capacitaciones en el Sistema Marugoto de enseñanza del japonés, por parte de la representante de la Fundación Japón en Brasil. Profesora Chisato Yoshioka.</p>
+
 	</section>
 
 <?php get_footer() ?>

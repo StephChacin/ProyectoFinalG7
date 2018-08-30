@@ -2,24 +2,24 @@
 	<?php the_post() ?>
 
 <!--Contenido Tienda-->
-	
-	<?php 
-		$arg = array(
-			'post_type' 	=> 'tienda',
-			'post_per_page' => 10,
-			'paged'			=> $paged
-		);
-
-	$get_arg = new WP_Query($arg);
-
-	while ($get_arg->have_post() ) {
-		$get_arg->the_post();
-	?>
 
 	<ul class="products">
+	<?php
+		$arg = array(
+			'post_type'		 => 'Tienda',
+			'posts_per_page' => 10,
+			'paged'			 => $paged
+		);
+	
+		$get_arg = new WP_Query( $arg );
+	
+		while ( $get_arg->have_posts() ) {
+			$get_arg->the_post();
+		?>
+			
 		<li class="products__books">
 			<a href="<?php the_permalink() ?>" class="products__thumbnail">
-				<?php the_post_thumbnail() ?>
+				<?php the_post_thumbnail(array(250,220)) ?>
 				<?php the_content(); ?>
 				<ul class="social">
 					<div class="caption"><h4><?php the_title() ?></h4></div>
@@ -28,91 +28,22 @@
 				</ul>
 			</a>
 		</li>
-	</ul>
-
+	
 	<?php } wp_reset_postdata(); ?>
+	</ul>
 	
 	<?php the_pagination($get_arg); ?>
 
-	<ul class="products">
-		<li class="products__books">
-			<div class="products__thumbnail">
-				<img src="<?php bloginfo('template_url')?>/assets/images/MarugotoA1K.jpg" alt="Producto 1" class="products__img">
-				<ul class="social">
-					<div class="caption"><h4><?php the_title() ?></h4></div>
-					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
-					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
-				</ul>
-			</div>
-		</li>
-
-		<li class="products__books">
-			<div class="products__thumbnail">
-				<img src="<?php bloginfo('template_url')?>/assets/images/MarugotoA1R.jpg" alt="Producto 1" class="products__img">
-				<ul class="social">
-					<div class="caption"><h4>Libro Marugoto A1R</h4></div>
-					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
-					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
-				</ul>
-			</div>
-		</li>
-
-		<li class="products__books">
-			<div class="products__thumbnail">
-				<img src="<?php bloginfo('template_url')?>/assets/images/MarugotoA2.2.jpg" alt="Producto 1" class="products__img">
-				<ul class="social">
-					<div class="caption"><h4>Libro Marugoto A2</h4></div>
-					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
-					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
-				</ul>
-			</div>
-		</li>
-
-		<li class="products__books">
-			<div class="products__thumbnail">
-				<img src="<?php bloginfo('template_url')?>/assets/images/MinnaShokyuu1.jpg" alt="Producto 1" class="products__img">
-				<ul class="social">
-					<div class="caption"><h4>Libro Minna no Nihongo I</h4></div>
-					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
-					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
-				</ul>
-			</div>
-		</li>
-
-		<li class="products__books">
-			<div class="products__thumbnail">
-				<img src="<?php bloginfo('template_url')?>/assets/images/MinnaShokyuu2.jpg" alt="Producto 1" class="products__img">
-				<ul class="social">
-					<div class="caption"><h4>Libro Minna no Nihongo II</h4></div>
-					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
-					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
-				</ul>
-			</div>
-		</li>
-
-		<li class="products__books">
-			<div class="products__thumbnail">
-				<img src="<?php bloginfo('template_url')?>/assets/images/TryN4.jpg" alt="Producto 1" class="products__img">
-				<ul class="social">
-					<div class="caption"><h4>TRY N4 JLPT</h4></div>
-					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
-					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
-				</ul>
-			</div>
-		</li>
-	</ul>
-
 	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
-	 <div class="container">
-   		<button class="btn_phrase" id="get-another-quote-button"><strong>Nueva Frase</strong></button>
-   		<h2 id="#quote-title"></h2>
-   		<p id='quote-content'></p>
+	<div class="container">
+		<button class="btn_phrase" id="get-another-quote-button"><strong>Nueva Frase</strong></button>
+		<h2 id="#quote-title"></h2>
+		<p id='quote-content'></p>
 	</div>
 
 	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 <?php get_footer() ?>
-
 
 
