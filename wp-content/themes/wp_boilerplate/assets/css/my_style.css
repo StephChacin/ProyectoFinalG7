@@ -318,6 +318,10 @@ button#send:hover{
 	margin-top: 3em;
 }
 
+.social_icon>a{
+	color:red;
+}
+
 .social_icon:hover {
 	color:#D90404;
 }

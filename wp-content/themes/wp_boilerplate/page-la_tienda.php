@@ -1,23 +1,26 @@
 <?php get_header() ?>
 	<?php the_post() ?>
+
+<!--Contenido Tienda-->
 	
-	<ul class="products">
 	<?php 
 		$arg = array(
-			'post_type' 	=> 'post',
-			'post_per_page' => 6,
+			'post_type' 	=> 'tienda',
+			'post_per_page' => 10,
 			'paged'			=> $paged
 		);
 
 	$get_arg = new WP_Query($arg);
 
-	while ($get_arg->have_post() ){
+	while ($get_arg->have_post() ) {
 		$get_arg->the_post();
 	?>
 
+	<ul class="products">
 		<li class="products__books">
 			<a href="<?php the_permalink() ?>" class="products__thumbnail">
 				<?php the_post_thumbnail() ?>
+				<?php the_content(); ?>
 				<ul class="social">
 					<div class="caption"><h4><?php the_title() ?></h4></div>
 					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
@@ -25,16 +28,18 @@
 				</ul>
 			</a>
 		</li>
-	<?php } wp_reset_postdata(); ?>
 	</ul>
-	<?php the_pagination($get_arg); ?> 
 
-	<!-- <ul class="products">
+	<?php } wp_reset_postdata(); ?>
+	
+	<?php the_pagination($get_arg); ?>
+
+	<ul class="products">
 		<li class="products__books">
 			<div class="products__thumbnail">
 				<img src="<?php bloginfo('template_url')?>/assets/images/MarugotoA1K.jpg" alt="Producto 1" class="products__img">
 				<ul class="social">
-					<div class="caption"><h4>Libro Marugoto A1K</h4></div>
+					<div class="caption"><h4><?php the_title() ?></h4></div>
 					<li class="social__element"><button class="social__btn_cart social__link" href="#"><i class="fas fa-shopping-cart"></i></i></button></li>
 					<li class="social__element"><button class="social__btn social__like" href="#"><i class="fas fa-heart"></i></button></li>
 				</ul>
@@ -95,7 +100,7 @@
 				</ul>
 			</div>
 		</li>
-	</ul> -->
+	</ul>
 
 	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
@@ -108,3 +113,6 @@
 	<div id="content"></div><a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
 <?php get_footer() ?>
+
+
+

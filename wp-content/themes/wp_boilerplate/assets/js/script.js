@@ -34,7 +34,7 @@ function isPage(arr) {
 
 
 	if (isPage(['clases'])) {
-		$("#getting-started").countdown("2018/12/31", function(event) {
+		$("#getting-started").countdown("2018/12/02", function(event) {
 			$(this).text( event.strftime('%D days %H:%M:%S') );
 		});
 	}
