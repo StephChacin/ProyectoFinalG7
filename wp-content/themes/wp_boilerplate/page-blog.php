@@ -13,14 +13,14 @@
  		<div class="post">
  	<?php endif; ?>
 
-
- 	<section class="">
+	<div class="jumbotron"></div>
+ 	<section class="container">
  	<!-- Display the Title as a link to the Post's permalink. -->
 
  	<h2 class="blog_title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-	<img class="about_image" <?php the_post_thumbnail()?>> 
-
+	<?php the_post_thumbnail( array(200,200))?> 
+	
  	<!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
 
  	<small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
@@ -37,11 +37,11 @@
  	<p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
  	</div> <!-- closes the first div box -->
 
+	</section>
 
  	<!-- Stop The Loop (but note the "else:" - see next line). -->
 
 
-	</section>
 
  <?php endwhile; else : ?>
 

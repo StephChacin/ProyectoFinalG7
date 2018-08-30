@@ -27,7 +27,9 @@ function dl_enqueue_scripts() {
 	wp_register_script( 'google_maps', 
 		'https://maps.googleapis.com/maps/api/js?key=AIzaSyCZtP9MFlLZB-zhCsVI_uuvb5bytOk1lyE&callback=initMap', null, null, true );
 	wp_register_script( 'flexslider', get_theme_file_uri('/assets/js/lib/jquery.flexslider.js'), array('jquery-migrate'), null, true );
-	wp_register_script( 'countdown_js', get_theme_file_uri('/assets/js/jquery.countdown.js'), array('jquery-migrate'), $theme_data->get( 'Version' ), true );
+
+	wp_register_script( 'countdown_js', get_theme_file_uri('/assets/js/lib/jquery.countdown.js'), array('jquery-migrate'), null, true );
+
 	
 	wp_register_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), $theme_data->get( '3.3.7' ), true );
 

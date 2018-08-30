@@ -399,6 +399,15 @@ button#send:hover{
 	margin-bottom: 1em;
 }
 
+/*
+.image_blog {
+	height:200px; 
+	width:200px;
+	display: block;
+	padding: 0 50px 0px 50px;
+	margin-bottom: 1em;
+}*/
+
 .about_image_1 {
 	max-width: 200px;
 }
